@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Submit Form</title></head>
+<body>
+    <h2>Submit Your Info</h2>
+    {% if error %}
+        <p style="color:red;">Error: {{ error }}</p>
+    {% endif %}
+    <form method="post">
+        Name: <input type="text" name="name"><br><br>
+        Age: <input type="text" name="age"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
